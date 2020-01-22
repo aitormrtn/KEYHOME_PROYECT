@@ -1,0 +1,15 @@
+El archivo lee_correo está hecho para python2, mientras que escribir_correo.py, keyhome.py y los del apartado de seguridad están en python3
+La forma de ejecutarlos es la siguiente:
+
+python2 lee_correo.py
+
+python3.6 escribir_correo.py
+
+python3.6 keyhome.py
+
+
+Me falta lo siguiente:
+-Hacer que se ejecuten los 3 programas al arrancar.
+-Ejecutar un programa desde otro programa (en el programa ultrasonido.py podemos saber si la caja ha sido manipulada, y cuando eso ocurra, deberá 
+ejecutarse el archivo escribir_correo.py, que está ya preparado para enviar un correo al propietario advirtiendo de lo sucedido).
+-Programa para saber si la raspberry está en funcionamiento en todo momento (para evitar manipulaciones de la misma mediante apagones, cortes de internet, etc)
