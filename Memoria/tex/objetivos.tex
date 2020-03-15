@@ -1,0 +1,56 @@
+\chapter{Objetivos}
+\label{ch:objetivos}
+
+\noindent El objeto principal de este trabajo de fin de grado es el de automatizar por completo la recepción de los turistas en las viviendas de uso turístico, de manera que los propietarios de las mismas no tengan que dedicar su tiempo a esta tarea. Para la llevar a cabo esta empresa, el objetivo principal se desglosa en otros más pequeños que trabajarán en conjunto. A continuación se identifican y explican cada uno de los objetivos que se han considerado:
+
+\section{Circuito electrónico capaz de abrir una cerradura eléctrica} 
+\label{sec:circuito-electronico-capaz-de-abrir-una-cerradura-electrica}
+
+\noindent Para poder abrir la puerta a los clientes en su llegada, es necesario que el circuito sea capaz de abrir la puerta. Este objetivo se alcanzará una vez que, a partir de una señal de 3 voltios emitida por la Raspberry Pi Zero W, se proceda a activar la apertura de una cerradura eléctrica. Para ello se hará uso de los materiales que resulten convenientes, como relés, transformadores, cableado, etc.
+
+\section{Programa para apertura de la vivienda desde Telegram} 
+\label{sec:programa-que-atienda-las-peticiones-de-apertura-desde-telegram}
+
+\noindent El presente objetivo estará completado en el momento en que el turista, al llegar a la vivienda de uso turístico, tenga la posibilidad de realizar la apertura de la vivienda desde la aplicación de Telegram.
+
+\section{Panel de administración desde Telegram} 
+\label{sec:creacion-de-un-panel-de-administracion-desde-telegram}
+
+\noindent Como administrador, la persona o personas que gestionen la vivienda tendrán la posibilidad de realizar distintas actividades desde la propia plataforma de Telegram. Este objetivo se habrá alcanzado en el momento en que, por medio de un programa integrado en la Raspberry Pi, el administrador sea capaz de realizar las siguientes operaciones:
+
+\begin{itemize}
+\item Consultar las reservas existentes. El anfitrión tendrá la posibilidad de consultar todas las reservas que contenga el sistema.
+\item Crear nuevas reservas. El anfitrión podrá crear reservas para los días que considere convenientes, desde un panel de gestión implantado en la propia aplicación de Telegram.
+\item Anular reservas. De igual manera, el anfitrión tendrá la posibilidad de cancelar aquellas reservas que considere convenientes.
+\item Por último, el panel de administración para el anfitrión incluirá la posibilidad de realizar la apertura de las puertas de forma automática.
+\end{itemize}
+
+\section{Automatización de nuevas reservas} 
+\label{sec:automatizacion-de-nuevas-reservas}
+
+\noindent Con el fin de que el propietario de la vivienda de uso turístico pueda automatizar el proceso de atención de los clientes, la Raspberry Pi integrará un programa  en el que se gestionarán todas las nuevas reservas que se produzcan de la vivienda, de manera que permitirá la entrada a los clientes una vez que estos se identifiquen a través de su número de reserva.
+
+\section{Automatización de cancelaciones de reservas} 
+\label{sec:automatizacion-de-cancelaciones-de-reservas}
+
+\noindent En la mayoría de plataformas de alquiler vacacional, como Booking, Airbnb, Homeaway, etc. Los clientes tienen la posibilidad de realizar cancelaciones. Por lo tanto, esto es algo que se debe tener en cuenta a la hora de automatizar el proceso de reservas y recepción de clientes. Para tal efecto se integrará un programa en la Raspberry Pi que recibirá las cancelaciones de los clientes, y lo incluirá en el sistema, de manera que esas personas no tendrán acceso a la vivienda por medio del número de reserva que obtuvieron antes de su cancelación.
+
+\section{Diseño en tres dimensiones para contener el circuito} 
+\label{sec:creacion-de-un-diseño-en-tres-dimensiones-para-contener-el-circuito}
+
+\noindent Con el fin de mejorar la seguridad del sistema, así como su aspecto visual, se procederá a crear un diseño en tres dimensiones donde se contendrá todo el circuito electrónico.
+
+Este diseño deberá permitir su instalación en la pared, por medio de tornillería o por medio de adhesivos, y proporcionará una sujeción firme de los elementos que se encuentren en su interior.
+
+También integrará la posibilidad de incluir un candado que asegure su cierre, de manera que se trate de evitar la manipulación indeseada por parte de otros usuarios.
+
+
+\section{Sistema de alarma ante posibles manipulaciones} 
+\label{sec:sistema-de-alarma-ante-posibles-manipulaciones}
+
+\noindent Todas las medidas de seguridad que se tomen serán de gran ayuda para crear confianza en aquellos propietarios que quieran hacer uso de este sistema. Si la Raspberry Pi trabajase de forma manipulada por algún usuario malintencionado, podría significar un problema importante de seguridad. Es por ello que se integrará en la placa un programa que permitirá advertir al administrador principal, por medio de un correo electrónico, en caso de que alguien haya abierto la caja donde se encuentra. De esta manera se le permitirá conocer la situación y actuar en consecuencia.
+
+\section{Sistema de alarma ante interrupciones} 
+\label{sec:sistema-de-alarma-ante-interrupciones}
+
+\noindent Un apagón, una caída de internet o un fallo interno de la Raspberry Pi, podrían provocar en un momento determinado una interrupción en el trabajo de la misma. Para que el administrador principal pueda ser conocedor de ello, y actuar en consecuencia, se incluirá un programa con el que se le avisará de lo sucedido a través de un correo electrónico.
