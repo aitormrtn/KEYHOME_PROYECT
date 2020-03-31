@@ -1,0 +1,54 @@
+\chapter{Introducción} 
+\label{ch:introduccion}
+
+\section{Presentación del problema} 
+\label{sec:presentacion-del-problema}
+
+\noindent El alquiler de viviendas para uso turístico constituye, sin lugar a dudas, un pilar para el turismo, y por tanto, para la economía en España. El turismo es el sector que más riqueza aporta a la economía española, en términos de producto interior bruto (PIB) y de empleo \cite{hosteltur2020}. No obstante, la integración de sistemas de automatización que tienen por objeto recibir a los clientes en este sector, no alcanza la misma velocidad, ya que en la mayoría de casos se sigue atendiendo a los turistas con el mismo modelo de hace 10 o 15 años.
+
+La mayoría de las viviendas de uso turístico siguen requiriendo una considerable carga de trabajo para sus anfitriones, y lejos de convertirse en un ingreso pasivo, se transforma en un trabajo que requiere atender una por una las nuevas reservas, recibir a los clientes, gestionar al personal de limpieza, responder ante posibles desperfectos, etc. Todo esto hace que muchas personas recurran a alquilar sus viviendas de la forma tradicional, por medio de particulares que harán uso de la misma durante un largo periodo de tiempo, a cambio de un monto inferior al que se recaudaría, en muchas ocasiones, por medio del alquiler turístico.
+
+Un sistema automatizado será capaz, por su naturaleza, de ofrecer servicios más económicos, o de mayor calidad, ya que su costé se verá reducido de forma considerable, y permitirá convertir estos ingresos en pasivos para los propietarios, quienes verán reducida de forma considerable su carga de trabajo, y esto les motivará a formar parte de esta actividad.
+
+Además, esto también jugará a favor de la economía de nuestro país, ya que en las fechas de mayor ocupación podrá tener disponibilidad de un mayor número de plazas para pernoctar, con todos los beneficios que ello implica a nivel económico.
+
+\section{Soluciones propuestas} 
+\label{sec:soluciones-propuestas}
+
+\noindent Este trabajo de fin de grado pretende introducir los desarrollos tecnológicos actuales en el mundo de las viviendas de uso turístico, eliminando parte de la carga de trabajo a la que se enfrentan los anfitriones de dichas viviendas. Algunas de las actividades que se pretenden realizar son las siguientes:
+\begin{itemize}
+\item Atención automatizada del cliente. El anfitrión de la vivienda no tendrá porque saber si alguien ha hecho o no una reserva si no quiere. Este sistema atenderá al cliente en el momento en que realice una reserva, y lo guiará hasta la vivienda, donde se encargará también de ofrecerle acceso.
+\item Automatización de las cancelaciones. En caso de que se produzcan cancelaciones, el sistema lo tendrá en cuenta y gestionará debidamente las acciones pertinentes, con el fin de anular el acceso para la persona que ejecuta la cancelación y abrirlo a nuevos clientes potenciales.
+\item El proyecto incluirá un panel de administración para el anfitrión, desde el cuál podrá realizar las siguientes tareas:
+\begin{itemize}
+\item Consultar las reservas existentes. El anfitrión tendrá la posibilidad de consultar todas las reservas que contenga el sistema.
+\item Crear nuevas reservas. El anfitrión podrá crear reservas para los días que considere convenientes, desde un panel de gestión implantado en la propia aplicación de Telegram.
+\item Anular reservas. De igual manera, el anfitrión tendrá la posibilidad de cancelar aquellas reservas que considere convenientes.
+\item Por último, el panel de administración para el anfitrión incluirá la posibilidad de realizar la apertura de las puertas de forma automática.
+\end{itemize}
+\end{itemize}
+Para llevar a efecto la apertura de las puertas se hará uso de una Raspberry Pi Zero W\footnote{\url{https://www.raspberrypi.org/products/raspberry-pi-zero-w/}}. Esta placa, por medio de su programación interna, facilitará la activación del circuito eléctrico que permitirá realizar la apertura de puertas. Además, gestionará la ejecución de todos los programas que se mencionan en el presento proyecto.
+
+En cuanto al uso de Telegram como plataforma de mensajería instantánea, se hará uso de la libreria disponible en python, \emph{PyTelegramBotApi}\footnote{\url{https://github.com/python-telegram-bot/python-telegram-bot}}.
+
+Los programas que se ejecutan trabajan con el envío y la recepción de correos electrónicos, por medio de los cuales realizan la automatización de los procesos. Estos correos electrónicos se enviarán a partir del lenguaje de programación Python con la libreria \emph{smtplib}\footnote{\url{https://github.com/python/cpython/blob/master/Lib/smtplib.py}}.
+
+\section{Organización de la memoria} 
+\label{sec:organizacion-memoria}
+
+\noindent La organización de este documento responde a un documento científico-técnico. Se descompone en los siguientes capítulos.
+
+\begin{description}
+    \item[\autoref{ch:objetivos}] Enumera y justifica los objetivos del proyecto y establece los límites intrínsecos y extrínsecos de ejecución del TFG.
+    \item[\autoref{ch:antecedentes}] Analiza los antecedentes y estado del arte en relación al tema del proyecto.
+    \item[\autoref{ch:desarrollo}] Describe todo el proceso de desarrollo del TFG.  Esto incluye la metodología de trabajo empleada y las diferentes etapas o iteraciones que se han llevado a cabo.  No dudes en descomponer el capítulo en varios si aglutina demasiado material.
+    \item[\autoref{ch:resultados}] Describe en detalle los resultados obtenidos y las pruebas realizadas. Discute los resultados en relación a los objetivos del proyecto.
+    \item[\autoref{ch:conclusiones}] Recopila las principales conclusiones del proyecto y comenta las líneas de trabajo futuro, en caso de que se contemplen.
+    \item[\deschyperlink{ch:anexos}{Anexos}] Complementan la información del cuerpo del documento con información técnica útil para reproducir los resultados, pero innecesaria para comprender en su totalidad el TFG realizado.
+    \item[\deschyperlink{ch:bibliografia}{Bibliografía}] Recopila las referencias bibliográficas utilizadas en este documento.
+\end{description}
+
+\section{Repositorio de información}
+\label{sec:repositorio}
+
+\noindent El material generado durante la ejecución de este proyecto está disponible en el repositorio \thegitrepo{}. El material incluye el código \LaTeX{} del presente documento, el código fuente de los programas realizados o modificados, y todos los datos generados en la evaluación de resultados.

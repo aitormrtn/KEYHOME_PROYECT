@@ -1,0 +1,14 @@
+\newcommand{\@listofsymbols}{}
+\newcommand{\listofsymbols}[1]{\renewcommand{\@listofsymbols}{\input{#1}}}
+
+\renewcommand\listoflistingscaption{Índice de listados}
+
+\newcommand{\indices}{%
+    \pagenumbering{roman}
+    \cleardoublepage\setcounter{page}{1}
+    \tableofcontents
+    \listoffigures
+    \listoflistings
+    \cleardoublepage\setcounter{page}{1}
+    \pagenumbering{arabic}
+}
