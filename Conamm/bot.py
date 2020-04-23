@@ -7,7 +7,8 @@ Created on Sun Apr 19 02:56:28 2020
 http://www.tuxrincon.com/blog/python-multihilo-ejemplos/
 
 PARA CAMBIAR A WEBHOOK (Nos busca Telegram)
-https://api.telegram.org/bot1051111158:AAFvK-O_b3OYY_9yG90i3etabjl_-xBGOVE/setWebHook?url=https://git.heroku.com/conamm.git
+https://api.telegram.org/bot1051111158:AAFvK-O_b3OYY_9yG90i3etabjl_-xBGOVE/setWebHook?url=https://conamm.herokuapp.com/
+https://git.heroku.com/conamm.git
 
 SI QUEREMOS CAMBIAR A POLLING (NOSOTROS LEEMOS LA BANDEJA DE TELEGRAM)
 https://api.telegram.org/bot1051111158:AAFvK-O_b3OYY_9yG90i3etabjl_-xBGOVE/setWebHook?url=
@@ -55,7 +56,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://git.heroku.com/conamm.git' + TOKEN)
+    bot.set_webhook(url='https://conamm.herokuapp.com/' + TOKEN)
     return "!", 200
 
 
