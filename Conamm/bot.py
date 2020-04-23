@@ -13,7 +13,7 @@ SI QUEREMOS CAMBIAR A POLLING (NOSOTROS LEEMOS LA BANDEJA DE TELEGRAM)
 https://api.telegram.org/bot1051111158:AAFvK-O_b3OYY_9yG90i3etabjl_-xBGOVE/setWebHook?url=
 
 """
-
+bot = telebot.TeleBot('1051111158:AAFvK-O_b3OYY_9yG90i3etabjl_-xBGOVE')
 import telebot
 @bot.message_handler(commands=["start","help"])
 def send_welcome(message):
