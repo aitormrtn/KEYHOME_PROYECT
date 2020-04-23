@@ -19,7 +19,7 @@ import telebot
 from flask import Flask, request
 import os
 
-TOKEN = "your bot token here"
+TOKEN = "1051111158:AAFvK-O_b3OYY_9yG90i3etabjl_-xBGOVE"
 bot = telebot.TeleBot(token=TOKEN)
 server = Flask(__name__)
 def findat(msg):
