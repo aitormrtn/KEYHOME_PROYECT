@@ -14,7 +14,6 @@ https://api.telegram.org/bot<BOT_TOKEN>/setWebHook?url=
 
 """
 
-import time
 import telebot
 from flask import Flask, request
 import os
