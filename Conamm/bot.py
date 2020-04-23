@@ -28,7 +28,7 @@ def findat(msg):
 
 @bot.message_handler(commands=['start']) # welcome message handler
 def send_welcome(message):
-    bot.reply_to(message.chat.id, '(placeholder text)')
+    bot.reply_to(message, '(placeholder text)')
 
 @bot.message_handler(commands=['help']) # help message handler
 def send_welcome(message):
