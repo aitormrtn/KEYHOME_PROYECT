@@ -18,7 +18,7 @@ import time
 import telebot
 from flask import Flask, request
 import os
-
+"""
 TOKEN = '1139484979:AAEoxMedvhtQPof_AFa55Exob55yCqFqTW4'
 bot = telebot.TeleBot(token=TOKEN)
 server = Flask(__name__)
@@ -62,6 +62,7 @@ def webhook():
 
 if __name__ == "__main__":
     server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
+"""
 """
 print(browser.find_element_by_name("quantityBox"))
 print(browser.context)
