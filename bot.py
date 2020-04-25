@@ -10,7 +10,7 @@ PARA CAMBIAR A WEBHOOK (Nos busca Telegram)
 https://api.telegram.org/bot1139484979:AAEoxMedvhtQPof_AFa55Exob55yCqFqTW4/setWebHook?url=https://conamm.herokuapp.com/
 
 SI QUEREMOS CAMBIAR A POLLING (NOSOTROS LEEMOS LA BANDEJA DE TELEGRAM)
-https://api.telegram.org/bot1139484979:AAEoxMedvhtQPof_AFa55Exob55yCqFqTW4/setWebHook?url=
+https://api.telegram.org/bot1051111158:AAFvK-O_b3OYY_9yG90i3etabjl_-xBGOVE/setWebHook?url=
 
 """
 
@@ -18,11 +18,11 @@ import time
 import telebot
 from flask import Flask, request
 import os
-
+TOKEN = "1051111158:AAFvK-O_b3OYY_9yG90i3etabjl_-xBGOVE"
 #lista_usuarios recoge todos los usuarios registrados
 lista_usuarios = ""
 datos_usuarios = []
-bot = telebot.TeleBot('1139484979:AAEoxMedvhtQPof_AFa55Exob55yCqFqTW4')
+bot = telebot.TeleBot(TOKEN)
 vector_meses =['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
 paso0 = []
 paso1 = []
