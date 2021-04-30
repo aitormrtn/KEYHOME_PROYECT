@@ -210,7 +210,7 @@ requests-oauthlib==1.2.0
 requests-toolbelt==0.9.1
 responses==0.10.6
 rope==0.11.0
-rsa==4.0
+rsa==4.7
 ruamel-yaml==0.15.46
 schedule==0.6.0
 scikit-image==0.14.1
